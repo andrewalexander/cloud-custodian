@@ -1,0 +1,411 @@
+{
+    "status_code": 200, 
+    "data": {
+        "Reservations": [
+            {
+                "OwnerId": "644160558196", 
+                "ReservationId": "r-0e5fa0bb3af3dee00", 
+                "Groups": [], 
+                "Instances": [
+                    {
+                        "Monitoring": {
+                            "State": "disabled"
+                        }, 
+                        "PublicDnsName": "", 
+                        "RootDeviceType": "ebs", 
+                        "State": {
+                            "Code": 80, 
+                            "Name": "stopped"
+                        }, 
+                        "EbsOptimized": false, 
+                        "LaunchTime": {
+                            "hour": 1, 
+                            "__class__": "datetime", 
+                            "month": 4, 
+                            "second": 39, 
+                            "microsecond": 0, 
+                            "year": 2017, 
+                            "day": 3, 
+                            "minute": 34
+                        }, 
+                        "PrivateIpAddress": "172.31.62.61", 
+                        "ProductCodes": [], 
+                        "VpcId": "vpc-d2d616b5", 
+                        "StateTransitionReason": "User initiated (2017-04-04 12:27:48 GMT)", 
+                        "InstanceId": "i-0aace5764d21d3105", 
+                        "EnaSupport": true, 
+                        "ImageId": "ami-0b33d91d", 
+                        "PrivateDnsName": "ip-172-31-62-61.ec2.internal", 
+                        "KeyName": "scot", 
+                        "SecurityGroups": [
+                            {
+                                "GroupName": "launch-wizard-15", 
+                                "GroupId": "sg-f7117688"
+                            }
+                        ], 
+                        "ClientToken": "WqUbW1491183279011", 
+                        "SubnetId": "subnet-3a334610", 
+                        "InstanceType": "t2.micro", 
+                        "NetworkInterfaces": [
+                            {
+                                "Status": "in-use", 
+                                "MacAddress": "12:52:99:dc:96:6e", 
+                                "SourceDestCheck": true, 
+                                "VpcId": "vpc-d2d616b5", 
+                                "Description": "", 
+                                "NetworkInterfaceId": "eni-ce54683a", 
+                                "PrivateIpAddresses": [
+                                    {
+                                        "PrivateDnsName": "ip-172-31-62-61.ec2.internal", 
+                                        "Primary": true, 
+                                        "PrivateIpAddress": "172.31.62.61"
+                                    }
+                                ], 
+                                "PrivateDnsName": "ip-172-31-62-61.ec2.internal", 
+                                "Attachment": {
+                                    "Status": "attached", 
+                                    "DeviceIndex": 0, 
+                                    "DeleteOnTermination": true, 
+                                    "AttachmentId": "eni-attach-67e3864b", 
+                                    "AttachTime": {
+                                        "hour": 1, 
+                                        "__class__": "datetime", 
+                                        "month": 4, 
+                                        "second": 39, 
+                                        "microsecond": 0, 
+                                        "year": 2017, 
+                                        "day": 3, 
+                                        "minute": 34
+                                    }
+                                }, 
+                                "Groups": [
+                                    {
+                                        "GroupName": "launch-wizard-15", 
+                                        "GroupId": "sg-f7117688"
+                                    }
+                                ], 
+                                "Ipv6Addresses": [], 
+                                "SubnetId": "subnet-3a334610", 
+                                "OwnerId": "644160558196", 
+                                "PrivateIpAddress": "172.31.62.61"
+                            }
+                        ], 
+                        "SourceDestCheck": true, 
+                        "Placement": {
+                            "Tenancy": "default", 
+                            "GroupName": "", 
+                            "AvailabilityZone": "us-east-1d"
+                        }, 
+                        "Hypervisor": "xen", 
+                        "BlockDeviceMappings": [
+                            {
+                                "DeviceName": "/dev/xvda", 
+                                "Ebs": {
+                                    "Status": "attached", 
+                                    "DeleteOnTermination": true, 
+                                    "VolumeId": "vol-0b5bc31549f55bdd2", 
+                                    "AttachTime": {
+                                        "hour": 1, 
+                                        "__class__": "datetime", 
+                                        "month": 4, 
+                                        "second": 40, 
+                                        "microsecond": 0, 
+                                        "year": 2017, 
+                                        "day": 3, 
+                                        "minute": 34
+                                    }
+                                }
+                            }
+                        ], 
+                        "Architecture": "x86_64", 
+                        "StateReason": {
+                            "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+                            "Code": "Client.UserInitiatedShutdown"
+                        }, 
+                        "RootDeviceName": "/dev/xvda", 
+                        "VirtualizationType": "hvm", 
+                        "Tags": [
+                            {
+                                "Value": "2017-04-10", 
+                                "Key": "expiration"
+                            }
+                        ], 
+                        "AmiLaunchIndex": 0
+                    }
+                ]
+            }, 
+            {
+                "OwnerId": "644160558196", 
+                "ReservationId": "r-01054e3c8ee6075e6", 
+                "Groups": [], 
+                "Instances": [
+                    {
+                        "Monitoring": {
+                            "State": "disabled"
+                        }, 
+                        "PublicDnsName": "", 
+                        "RootDeviceType": "ebs", 
+                        "State": {
+                            "Code": 80, 
+                            "Name": "stopped"
+                        }, 
+                        "EbsOptimized": false, 
+                        "LaunchTime": {
+                            "hour": 14, 
+                            "__class__": "datetime", 
+                            "month": 3, 
+                            "second": 27, 
+                            "microsecond": 0, 
+                            "year": 2017, 
+                            "day": 28, 
+                            "minute": 55
+                        }, 
+                        "PrivateIpAddress": "172.31.28.33", 
+                        "ProductCodes": [], 
+                        "VpcId": "vpc-d2d616b5", 
+                        "StateTransitionReason": "User initiated (2017-04-03 01:32:42 GMT)", 
+                        "InstanceId": "i-0a0b51bcf11a8cdfb", 
+                        "EnaSupport": true, 
+                        "ImageId": "ami-0b33d91d", 
+                        "PrivateDnsName": "ip-172-31-28-33.ec2.internal", 
+                        "KeyName": "calvin-east-1", 
+                        "SecurityGroups": [
+                            {
+                                "GroupName": "launch-wizard-14", 
+                                "GroupId": "sg-fc46c983"
+                            }
+                        ], 
+                        "ClientToken": "tJMFV1490712926683", 
+                        "SubnetId": "subnet-efbcccb7", 
+                        "InstanceType": "t2.micro", 
+                        "NetworkInterfaces": [
+                            {
+                                "Status": "in-use", 
+                                "MacAddress": "0e:63:aa:34:b4:02", 
+                                "SourceDestCheck": true, 
+                                "VpcId": "vpc-d2d616b5", 
+                                "Description": "", 
+                                "NetworkInterfaceId": "eni-2de6aceb", 
+                                "PrivateIpAddresses": [
+                                    {
+                                        "PrivateDnsName": "ip-172-31-28-33.ec2.internal", 
+                                        "Primary": true, 
+                                        "PrivateIpAddress": "172.31.28.33"
+                                    }
+                                ], 
+                                "PrivateDnsName": "ip-172-31-28-33.ec2.internal", 
+                                "Attachment": {
+                                    "Status": "attached", 
+                                    "DeviceIndex": 0, 
+                                    "DeleteOnTermination": true, 
+                                    "AttachmentId": "eni-attach-a6156bf6", 
+                                    "AttachTime": {
+                                        "hour": 14, 
+                                        "__class__": "datetime", 
+                                        "month": 3, 
+                                        "second": 27, 
+                                        "microsecond": 0, 
+                                        "year": 2017, 
+                                        "day": 28, 
+                                        "minute": 55
+                                    }
+                                }, 
+                                "Groups": [
+                                    {
+                                        "GroupName": "launch-wizard-14", 
+                                        "GroupId": "sg-fc46c983"
+                                    }
+                                ], 
+                                "Ipv6Addresses": [], 
+                                "SubnetId": "subnet-efbcccb7", 
+                                "OwnerId": "644160558196", 
+                                "PrivateIpAddress": "172.31.28.33"
+                            }
+                        ], 
+                        "SourceDestCheck": true, 
+                        "Placement": {
+                            "Tenancy": "default", 
+                            "GroupName": "", 
+                            "AvailabilityZone": "us-east-1b"
+                        }, 
+                        "Hypervisor": "xen", 
+                        "BlockDeviceMappings": [
+                            {
+                                "DeviceName": "/dev/xvda", 
+                                "Ebs": {
+                                    "Status": "attached", 
+                                    "DeleteOnTermination": true, 
+                                    "VolumeId": "vol-01adbb6a4f175941d", 
+                                    "AttachTime": {
+                                        "hour": 14, 
+                                        "__class__": "datetime", 
+                                        "month": 3, 
+                                        "second": 28, 
+                                        "microsecond": 0, 
+                                        "year": 2017, 
+                                        "day": 28, 
+                                        "minute": 55
+                                    }
+                                }
+                            }
+                        ], 
+                        "Architecture": "x86_64", 
+                        "StateReason": {
+                            "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+                            "Code": "Client.UserInitiatedShutdown"
+                        }, 
+                        "RootDeviceName": "/dev/xvda", 
+                        "VirtualizationType": "hvm", 
+                        "Tags": [
+                            {
+                                "Value": "2017-04-13", 
+                                "Key": "expiration"
+                            }
+                        ], 
+                        "AmiLaunchIndex": 0
+                    }
+                ]
+            }, 
+            {
+                "OwnerId": "644160558196", 
+                "ReservationId": "r-052b81d37c4baa7b0", 
+                "Groups": [], 
+                "Instances": [
+                    {
+                        "Monitoring": {
+                            "State": "disabled"
+                        }, 
+                        "PublicDnsName": "", 
+                        "State": {
+                            "Code": 16, 
+                            "Name": "running"
+                        }, 
+                        "EbsOptimized": false, 
+                        "LaunchTime": {
+                            "hour": 20, 
+                            "__class__": "datetime", 
+                            "month": 4, 
+                            "second": 21, 
+                            "microsecond": 0, 
+                            "year": 2017, 
+                            "day": 10, 
+                            "minute": 41
+                        }, 
+                        "PrivateIpAddress": "10.0.42.59", 
+                        "ProductCodes": [], 
+                        "VpcId": "vpc-f1516b97", 
+                        "StateTransitionReason": "", 
+                        "InstanceId": "i-0be2fdca058278ea3", 
+                        "ImageId": "ami-f4cc1de2", 
+                        "PrivateDnsName": "ip-10-0-42-59.ec2.internal", 
+                        "SecurityGroups": [
+                            {
+                                "GroupName": "FancyTestGroupPublic", 
+                                "GroupId": "sg-f8c78787"
+                            }
+                        ], 
+                        "ClientToken": "Gjqgm1491856879879", 
+                        "SubnetId": "subnet-6f273034", 
+                        "InstanceType": "t2.micro", 
+                        "NetworkInterfaces": [
+                            {
+                                "Status": "in-use", 
+                                "MacAddress": "0e:13:c9:48:3d:58", 
+                                "SourceDestCheck": true, 
+                                "VpcId": "vpc-f1516b97", 
+                                "Description": "Primary network interface", 
+                                "NetworkInterfaceId": "eni-67d758be", 
+                                "PrivateIpAddresses": [
+                                    {
+                                        "Primary": true, 
+                                        "PrivateIpAddress": "10.0.42.59"
+                                    }
+                                ], 
+                                "Ipv6Addresses": [], 
+                                "Attachment": {
+                                    "Status": "attached", 
+                                    "DeviceIndex": 0, 
+                                    "DeleteOnTermination": true, 
+                                    "AttachmentId": "eni-attach-aab053f9", 
+                                    "AttachTime": {
+                                        "hour": 20, 
+                                        "__class__": "datetime", 
+                                        "month": 4, 
+                                        "second": 21, 
+                                        "microsecond": 0, 
+                                        "year": 2017, 
+                                        "day": 10, 
+                                        "minute": 41
+                                    }
+                                }, 
+                                "Groups": [
+                                    {
+                                        "GroupName": "FancyTestGroupPublic", 
+                                        "GroupId": "sg-f8c78787"
+                                    }
+                                ], 
+                                "SubnetId": "subnet-6f273034", 
+                                "OwnerId": "644160558196", 
+                                "PrivateIpAddress": "10.0.42.59"
+                            }
+                        ], 
+                        "SourceDestCheck": true, 
+                        "Placement": {
+                            "Tenancy": "default", 
+                            "GroupName": "", 
+                            "AvailabilityZone": "us-east-1b"
+                        }, 
+                        "Hypervisor": "xen", 
+                        "BlockDeviceMappings": [
+                            {
+                                "DeviceName": "/dev/sda1", 
+                                "Ebs": {
+                                    "Status": "attached", 
+                                    "DeleteOnTermination": true, 
+                                    "VolumeId": "vol-0252f61378ede9d01", 
+                                    "AttachTime": {
+                                        "hour": 20, 
+                                        "__class__": "datetime", 
+                                        "month": 4, 
+                                        "second": 21, 
+                                        "microsecond": 0, 
+                                        "year": 2017, 
+                                        "day": 10, 
+                                        "minute": 41
+                                    }
+                                }
+                            }
+                        ], 
+                        "Architecture": "x86_64", 
+                        "RootDeviceType": "ebs", 
+                        "RootDeviceName": "/dev/sda1", 
+                        "VirtualizationType": "hvm", 
+                        "Tags": [
+                            {
+                                "Value": "FancyTestInstancePrivate", 
+                                "Key": "Name"
+                            }, 
+                            {
+                                "Value": "jones", 
+                                "Key": "ralph"
+                            }
+                        ], 
+                        "AmiLaunchIndex": 0
+                    }
+                ]
+            }
+        ], 
+        "ResponseMetadata": {
+            "RetryAttempts": 0, 
+            "HTTPStatusCode": 200, 
+            "RequestId": "8a707136-4e49-4ecf-a9a4-f3f2a1a96762", 
+            "HTTPHeaders": {
+                "transfer-encoding": "chunked", 
+                "vary": "Accept-Encoding", 
+                "server": "AmazonEC2", 
+                "content-type": "text/xml;charset=UTF-8", 
+                "date": "Tue, 09 May 2017 19:12:17 GMT"
+            }
+        }
+    }
+}

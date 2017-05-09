@@ -787,3 +787,34 @@ class SecurityGroupTest(BaseTest):
                 {'GroupName': 'sg2'}]})
 
 
+    def test_network_location_filter(self):
+        # test condition: 
+        # a) vpc with two subnets: 1) tag:NetworkLocation=Public, 2) tag:NetworkLocation=Private
+        # b) ec2 in subnet with tag:NetworkLocation=Private
+        # c) SG with tag:NetworkLocation=Public attached to ec2 (location mismatch)
+        factory = self.record_flight_data('test_network_location_filter')
+        # client = factory().client('ec2')
+        p = self.load_policy({
+            'name': 'enforce-network-location',
+            'resource': 'ec2',
+            'filters': [
+                {'type': 'subnet',
+                 'key': 'tag:NetworkLocation',
+                 'value': 'not-null'},
+                {'type': 'network-location',
+                    'key': 'tag:NetworkLocation',
+                    'value': 'not-null'}
+                
+                ]
+            }, session_factory=factory)
+        resources = p.run()
+        self.assertEqual(len(resources), 1)
+        self.assertEqual(
+            len(resources[0].get('NetworkLocation', [])), 1)
+
+        self.assertEqual(
+            resources[0]['NetworkLocation'],
+            {'reason': 'LocationMismatch',
+             'subnets': {'subnet-id': 'subnet-network-location-tag'},
+             'security-groups': {'sg-id-1': 'sg-1-network-location-tag', 'sg-id-2': 'sg-2-network-location-tag'}
+            })

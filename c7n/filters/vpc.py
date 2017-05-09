@@ -73,6 +73,7 @@ class NetworkLocation(Filter):
         if 'security-group' not in rfilters:
             raise FilterValidationError(
                 "network-location requires resource security-group filter")
+        return self
 
     def process(self, resources):
         sg = self.manager.filter_registry.get('security-group')

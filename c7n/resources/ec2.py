@@ -42,6 +42,7 @@ actions = ActionRegistry('ec2.actions')
 
 actions.register('auto-tag-user', AutoTagUser)
 filters.register('health-event', HealthEventFilter)
+# filters.register('network-location', net_filters.NetworkLocation)
 
 
 @resources.register('ec2')
@@ -167,6 +168,12 @@ class SubnetFilter(net_filters.SubnetFilter):
 
     RelatedIdsExpression = "SubnetId"
 
+
+@filters.register('network-location')
+class NetworkLocationFilter(net_filters.NetworkLocation):
+    RelatedIdsExpression = "NetworkLocation"
+    # def process(self, resources):
+        # return super(NetworkLocationFilter, self).process(resources)
 
 @filters.register('state-age')
 class StateTransitionAge(AgeFilter):
